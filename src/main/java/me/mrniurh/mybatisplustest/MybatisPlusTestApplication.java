@@ -1,11 +1,12 @@
 package me.mrniurh.mybatisplustest;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author MrNiurh
+ */
 @SpringBootApplication
-@MapperScan("me.mrniurh.mybatisplustest.mapper")
 public class MybatisPlusTestApplication {
 
     public static void main(String[] args) {

@@ -12,4 +12,19 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface UserMapper extends BaseMapper<Users> {
+
+    /**
+     * 所有人年龄加 1
+     *
+     * @return java.lang.Integer 返回受影响行数
+     */
+    Integer agePlusOne();
+
+    /**
+     * 所有人年龄减 1
+     *
+     * @return java.lang.Integer 返回受影响行数
+     */
+    Integer ageSubtractOne();
+
 }

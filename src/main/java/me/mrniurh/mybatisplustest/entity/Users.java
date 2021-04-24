@@ -1,24 +1,25 @@
 package me.mrniurh.mybatisplustest.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Setter
 @Getter
 @Accessors(chain = true)
 @TableName("users")
+@ToString
 public class Users {
 
     /**
      * 主键
      */
-    @TableId(type = IdType.AUTO)
+    @TableId
     private Integer id;
 
     /**
@@ -34,7 +35,7 @@ public class Users {
     /**
      * 出生日期
      */
-    private LocalDateTime birthday;
+    private LocalDate birthday;
 
     /**
      * 工号
@@ -42,7 +43,7 @@ public class Users {
     private String jobNumber;
 
     /**
-     * 户籍地
+     * 所在地
      */
     private String address;
 
