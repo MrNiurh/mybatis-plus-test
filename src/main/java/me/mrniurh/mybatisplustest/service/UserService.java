@@ -2,7 +2,6 @@ package me.mrniurh.mybatisplustest.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import me.mrniurh.mybatisplustest.entity.Users;
-import org.springframework.stereotype.Service;
 
 /**
  * @Author MrNiurh
