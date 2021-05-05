@@ -12,7 +12,6 @@ mybatis-plus:
   mapper-locations: classpath:/mappers/*Mapper.xml
   # 扫描实体类,多个package用逗号或者分号分隔
   typeAliasesPackage: me.mrniurh.mybatisplustest.entity
-  # 主键类型
   global-config:
     #关闭MP3.0自带的banner
     banner: false

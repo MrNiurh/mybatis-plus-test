@@ -1,7 +1,6 @@
 package me.mrniurh.mybatisplustest.serviceCRUD;
 
 import me.mrniurh.mybatisplustest.entity.Users;
-import me.mrniurh.mybatisplustest.mapper.UserMapper;
 import me.mrniurh.mybatisplustest.service.UserService;
 import me.mrniurh.mybatisplustest.utils.GenerateUsersUtil;
 import org.junit.jupiter.api.Test;
@@ -27,7 +26,6 @@ public class saveTests {
     void insertOneUserTest() {
 
         // 单条记录新增
-
         Users user = new Users()
                 .setAge(25)
                 .setName("Frank")
@@ -35,7 +33,6 @@ public class saveTests {
                 .setAddress("福建")
                 .setJobNumber("MP00006")
                 .setRemark("Test");
-
         userService.save(user);
 
     }
@@ -46,7 +43,6 @@ public class saveTests {
         // 批量新增
         // 100 个随机用户
         List<Users> userList = GenerateUsersUtil.generateUserList(100, "batchInsertTest");
-
         userService.saveBatch(userList);
 
     }
@@ -57,7 +53,6 @@ public class saveTests {
         // 批量新增
         // 1000 个随机用户
         List<Users> userList = GenerateUsersUtil.generateUserList(1000, "batchInsertWithSizeTest");
-
         userService.saveBatch(userList, 200);
 
     }
